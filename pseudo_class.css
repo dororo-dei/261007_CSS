@@ -1,0 +1,31 @@
+ul li:first-child {
+  color: purple;
+}
+ul li:last-child {
+  color: skyblue;
+}
+ul li:nth-child(2) {
+  color: plum;
+}
+/* 짝수 2n 아니면 even */
+ul li:nth-child(2n) {
+  background-color: paleturquoise;
+}
+/* 홀수 2n + 1 아니면 odd*/
+ul li:nth-child(odd) {
+  background-color: palevioletred;
+}
+.box > p {
+  color: powderblue;
+}
+/* +는 형제 선택자 : 바로 다음 형제 선택 */
+p + p {
+  background-color: brown;
+}
+h2 + p {
+  color: brown;
+}
+/* ~ 뒤에 나오는 모든 형제 선택 */
+h2 ~ p {
+  color: powderblue;
+}

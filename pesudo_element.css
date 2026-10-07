@@ -1,0 +1,21 @@
+p::before {
+  content: "🎀";
+  font-size: 14px;
+}
+p::after {
+  content: "0000";
+  font-size: 14px;
+  color: palevioletred;
+}
+/* copy unicode 복사할 것 */
+h2::after {
+  content: "\e3af";
+  font-family: "Font Awesome 6 Free";
+  color: palevioletred;
+  font-size: 16px;
+}
+.fa-house-chimney {
+  font-size: 50px;
+  color: palevioletred;
+}
+  
