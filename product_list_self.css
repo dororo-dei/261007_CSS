@@ -7,16 +7,90 @@ ul,
 li {
   list-style: none;
 }
-/* a {
+a {
   color: #333;
   text-decoration: none;
+}
+/* 상단 */
+header {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  background-color: skyblue;
+}
+/* 메뉴 */
+nav {
+  background-color: #fff;
+}
+.menu {
+  width: 500px;
+  /* text-align: center; */
+  display: flex;
+}
+.menu > li {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+/* .menu > li > a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: plum;
 } */
+.menu > li:hover > a {
+  padding: 10px 0;
+  background-color: powderblue;
+  color: midnightblue;
+}
+/* 각 메뉴와 서브메뉴 1만 나옴 */
+/* .menu > li:hover .submenu {
+  display: block;
+  opacity: 1;
+  } */
+/* 전체 서브메뉴가 나옴 */
+.menu:hover .submenu {
+  display: block;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  width: 100%;
+  z-index: 2;
+  background-color: powderblue;
+}
+/* .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: cornflowerblue;
+  display: none;
+} */
+.menu > li > a {
+  padding: 10px 0;
+  display: block;
+  /* background-color: aqua; */
+}
+.submenu > li > a {
+  display: block;
+  border: 1px solid #fff;
+  width: 100%;
+}
+.submenu > li > a:hover {
+  background-color: skyblue;
+  color: #fff;
+}
 /* 전체 레이아웃 */
 .container {
   width: 1200px;
   margin: 0 auto;
   padding: 30px;
-  background-color: palevioletred;
+  background-color: powderblue;
 }
 .container h1 {
   text-align: center;
