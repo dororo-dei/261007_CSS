@@ -1,0 +1,27 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: palevioletred;
+  border: 1px solid #333;
+  transition-property: width, height;
+  transition: all 0.3s ease-in-out;
+  /* transition-duration: 0.3s;
+  transition-timing-function: ease-in-out; */
+}
+.bgtr1:hover {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+.bgtr2:hover {
+  border-radius: 50%;
+  background-color: plum;
+}
+.bgtr3:hover {
+  border-radius: 50%;
+  /* border-style: dotted;
+  border-width: 5px;
+  border-color: purple; */
+  border: 5px dotted purple;
+  transform: rotate(60deg) translateX(100px);
+}
